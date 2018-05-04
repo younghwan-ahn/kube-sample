@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: hello-go
-        image: urunimi/hello-go:latest
+        image: pineforest/hello-go:latest
         imagePullPolicy: Always
         ports:
         - name: hello-go-port

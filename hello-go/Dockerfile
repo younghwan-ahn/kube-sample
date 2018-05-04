@@ -3,14 +3,14 @@
 FROM golang:1.10.1
 
 # Copy the local package files to the container's workspace.
-ADD ./ src/github.com/urunimi/hello-go
+ADD ./ src/github.com/younghwan-ahn/hello-go
 
 # Build the project inside the container.
-RUN go install github.com/urunimi/hello-go
+RUN go install github.com/younghwan-ahn/hello-go
 
 # Delete source code.
 RUN find . -name "*.go" -type f -delete
-RUN rm -rf src/github.com/urunimi/hello-go/Dockerfile
+RUN rm -rf src/github.com/younghwan-ahn/hello-go/Dockerfile
 
 # Change working dir -> for locating configrations
 WORKDIR .

@@ -5,7 +5,8 @@ if [ -z "$TAG" ]; then
 	TAG=`git rev-parse --short HEAD`
 fi
 
-IMAGE_NAME=urunimi/hello-go
+#IMAGE_NAME=younghwan-ahn/hello-go
+IMAGE_NAME=pineforest/hello-go
 
 if [ -z "$WORKSPACE" ]; then
 	WORKSPACE=`pwd`
